@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <!-- Padma Shneha Portfolio -->
+    <meta charset="UTF-8">
+    <link rel = 'stylesheet' href="main_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: #9DC5D1;
+        align-items: stretch;
+    }
+    #heading{
+        font-size: 50px;
+        color: black;
+        font-family: Kanit;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+        width:1200px;
+        font-weight: bold;
+        margin: 50px;
+        border: 5px solid black;
+        border-radius: 80px;
+        box-shadow: 5px 5px;
+        background-color: rgb(241, 194, 5);
+    }
+    #work{
+        display: flex;
+        font-family: Kanit;
+        font-weight: light;
+        padding-bottom: 100px;
+        gap: 10px;
+        /* background-color: whitesmoke; */
+        border-radius: 30px;
+        height: 500px;
+        flex-direction: row;
+    }
+    #work > div{
+        background-color: #ce7a31;
+        height: 80%;
+        border: 3px solid black;
+        padding-bottom: 20px;
+        box-shadow: 3px 3px;
+        width: 50%;
+        border-radius: 20px;
+        margin: 15px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .responsive{
+        width: 100%;
+        border-radius: 20px;
+        /* border: 3px solid black; */
+        border-bottom: 3px solid black;
+        height: 75%;
+        text-align: center;
+        word-break: break-all;
+
+    }
+    #header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;               /* space between logo and title */
+    padding: 10px 20px;
+    }
+    .logo{
+        height:80px;
+    }
+</style>
+
+<body>
+        <div id="header">
+            <a href = 'main.html'>
+                <img src ='PS-5.png' class = 'logo'></a>
+    <div id = 'heading'>
+        Web Development Projects
+    </div>
+    </div>
+    
+
+
+    <div id = 'work'>
+        <div>
+            <img src ='Full Portfolio/cg.png' class = 'responsive'>
+            <p>Don't Break the Chain</p>
+        </div>
+        <div>
+            <img src ='Full Portfolio/pomo.png' class = 'responsive'>
+            <p>Pomodoro Timer</p>
+        </div>
+        <div>
+            <img src ='Full Portfolio/breakfastgen.png' class = 'responsive'>
+            <p>Meal Idea Generator</p>
+        </div>
+    </div>
+</body>
