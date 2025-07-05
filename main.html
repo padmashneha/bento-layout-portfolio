@@ -1,0 +1,230 @@
+    <!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel = 'stylesheet' href="main_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <style>
+            html, body {
+                background-color: #ffffff;
+                margin: 0;
+                height: 100%;
+                font-family: kanit;
+                font-weight: bold;
+
+            }
+            #gridbox{
+                /* background-color: antiquewhite; */
+                display: grid;
+                grid-template-areas: 'header header'  'menu content' 'footer footer';
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: 250px;
+                height: 100%;
+                /* width: 100%; */
+                margin: 10px auto;
+                max-width: 70%;
+                gap: 20px;
+            }
+            #gridbox > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 10px;
+                font-size: 40px;
+                border-radius: 10px;
+                border: 5px black solid;
+                box-shadow: 5px 5px;
+                
+                }
+                #gridbox > div.webdev {
+                background-color: #E5E059;            
+                /* margin: 10px; */
+                text-align: center;
+                grid-column: 1 / span 2;
+                }
+
+                #gridbox > div.dataviz {
+                background-color:#BDD358;
+                grid-column: 3;
+                }
+                
+                #gridbox > div.blog {
+                    background-color:#CEDE82;
+                    grid-column: 4;
+                    grid-row: 1/span 2;
+                }
+
+                #gridbox > div.analytics {
+                background-color:#DEE9AC;
+                grid-column: 1;
+                grid-row: 2;
+                }
+                
+                
+                #gridbox > div.name {
+                    background-color:#C9CBA3;
+                    /* grid-area: footer; */
+                    grid-column: 2/span 2;
+                }
+                #gridbox > div.resume {
+                    background-color:#D19181;
+                    /* grid-area: footer; */
+                    grid-column: 1/span 2;
+                }
+                #gridbox > div.contact {
+                    background-color:#E5625E;
+                    /* grid-area: footer; */
+                    grid-column: 3/span 2;
+                }
+                a {
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                    text-decoration: none;
+                    color: inherit;
+                }
+                /* .typing-container {
+                    font-family: monospace;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-right: 2px solid black;
+                    width: 0;
+                    animation: typing 3s steps(30, end) forwards, blink 0.5s step-end infinite;
+                }
+
+                @keyframes typing {
+                    from { width: 0; }
+                    to { width: 12ch; } /* Adjust to match your text length */
+                /*}
+
+                @keyframes blink {
+                    50% { border-color: transparent; }
+                } */
+                .typing-subcontainer {
+                    font-family: monospace;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-right: 2px solid black;
+                    width: 0;
+                    animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;
+                    font-size: 15px;
+                }
+
+                @keyframes typing {
+                    from { width: 0; }
+                    to { width: 36ch; } /* Adjust to match your text length */
+                }
+
+                @keyframes blink {
+                    50% { border-color: transparent; }
+                }
+                .webtitle, .anatitle, .datatitle{
+                    background-color: #3e3e3e;
+                    color: #F8E38A;
+                    font-size: 20px;
+                    margin-right: 150px;
+                    padding: 10px;
+                }
+                .restitle {
+                    background-color: #3e3e3e;
+                    color: #F8E38A;
+                    font-size: 20px;
+                    margin-right: 250px; 
+                    padding: 10px;
+                }
+                .contitle {
+                    background-color: #3e3e3e;
+                    color: #F8E38A;
+                    font-size: 20px;
+                    /* margin-left: 420px;  */
+                    padding: 10px;
+                }
+                .blogtitle {
+                    background-color: #3e3e3e;
+                    color: #F8E38A;
+                    font-size: 20px;
+                    margin-right: 100px; 
+                    margin-top: 200px;
+                    padding: 10px;
+                }
+                .weblink {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                    color: inherit;
+                    height: 100%;
+                    width: 100%;
+
+                }
+                .webimg {
+                    max-width: 100%;
+                    max-height: 150px; 
+                    height: auto;
+                    object-fit: contain;
+                }   
+
+                .blogimg{
+                    max-width: 200px;
+                    /* margin-top: 350px; */
+                    height: 250px;
+                }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id = 'gridbox'>
+            <div class="webdev">
+                <a href ='webdev.html' class="weblink">
+                    <div class = 'webtitle'>WEB DEVELOPMENT</div>
+                    <img src = '4.png' alt='webdevImg' class= 'webimg'>
+                </a>    
+                
+                </div>
+            
+            <div class="analytics">
+                <a href ='analytics.html' class="weblink">
+                <div class = 'anatitle'>ANALYTICS</div>
+                    <img src = 'ana.png' alt='anaImg' class= 'webimg'>
+                </a>
+                </div>
+            <div class="dataviz"> 
+                <a href ='dataviz.html' class="weblink">
+                    <div class = 'datatitle'>DATA VISULAIZATION</div>
+                        <img src = '5.png' alt='webdevImg' class= 'webimg'>
+                    </a>
+                
+    
+            </div>
+            <div class="blog">
+                <a href ='https://medium.com/@padmashneha' class="weblink">
+                    <img src = 'b.png' alt='blogImg' class= 'blogimg'>
+                    <div class = 'blogtitle'>BLOG</div>
+                        
+                    </a>
+                
+
+            </div>
+            <div class="name"><div class = 'typing-container'>PADMA SHNEHA</div>
+            <div class = 'typing-subcontainer'>Creative Web Developer, Data Analyst</div>
+                <img src = '6.png' alt='blogImg' class= 'blogimg' style="margin-left: 280px; margin-top: 10px; height: 60%;">
+            </div>
+            <div class="resume">
+                <a href ='Padma Shneha Resume Data.pdf' class="weblink">
+                    
+                    <div class = 'restitle'>RESUME</div>
+                    <img src = 'res.png' alt='blogImg' class= 'webimg'> 
+                    </a>
+                
+            </div>
+            <div class="contact">
+                <a href ='https://www.linkedin.com/in/padmashneha/' class="weblink">
+                        <img src = '2.png' alt='blogImg'  class="webimg"> 
+                        <div class = 'contitle'>CONTACT</div>
+                    </a>
+                
+            </div>
+        </div>
+    </body>
